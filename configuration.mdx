@@ -1,0 +1,136 @@
+---
+title: Customizing Your Documentation Space
+description: Learn how to personalize your documentation environment, including themes, permissions, and advanced settings.
+---
+
+## Overview
+
+Personalize your Clarkemilyfbznj Documentation space to match your brand and team needs. Apply custom themes with your brand color `{` `#3B82F6` `}`, manage user permissions, configure exports, and integrate custom CSS. These settings ensure your documentation reflects your identity while maintaining security and usability.
+
+<Columns cols={3}>
+  <Card title="Brand Themes" icon="palette" href="#brand-themes">
+    Customize colors and styles quickly.
+  </Card>
+  <Card title="User Permissions" icon="users" href="#permissions">
+    Control access levels precisely.
+  </Card>
+  <Card title="Export Options" icon="download" href="#exports">
+    Generate PDFs or HTML exports.
+  </Card>
+</Columns>
+
+## Applying Brand Colors and Themes
+
+Update your theme settings to incorporate your brand color `#3B82F6`. Navigate to the Settings panel and select the Themes tab.
+
+<Steps>
+  <Step title="Access Settings" icon="settings">
+    Click your profile icon in the top-right corner and select `Settings`.
+  </Step>
+  <Step title="Choose Theme" icon="palette">
+    Go to the `Themes` section and select `Custom Theme`.
+  </Step>
+  <Step title="Apply Brand Color" icon="brush">
+    Enter `#3B82F6` in the `Primary Color` field. Preview changes live.
+  </Step>
+  <Step title="Save Changes" icon="save">
+    Click `Apply` to update your entire documentation space.
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Save your custom theme as a preset for quick reuse across projects.
+</Callout>
+
+## Setting User Permissions
+
+Define roles to control what team members can do. Use viewer, editor, or admin roles.
+
+<Tabs>
+  <Tab title="Viewer" icon="eye">
+    Viewers read documentation but cannot edit.
+
+    | Permission | Allowed |
+    |------------|---------|
+    | Read      | Yes    |
+    | Edit      | No     |
+    | Delete    | No     |
+  </Tab>
+  <Tab title="Editor" icon="edit-3">
+    Editors modify pages and add content.
+
+    | Permission | Allowed |
+    |------------|---------|
+    | Read      | Yes    |
+    | Edit      | Yes    |
+    | Delete    | No     |
+  </Tab>
+  <Tab title="Admin" icon="shield">
+    Admins manage everything, including users.
+
+    | Permission | Allowed |
+    |------------|---------|
+    | Read      | Yes    |
+    | Edit      | Yes    |
+    | Delete    | Yes    |
+  </Tab>
+</Tabs>
+
+To assign roles, go to `Team > Members` and select a user.
+
+## Configuring Export Options
+
+Set up exports for sharing documentation offline.
+
+<Expandable title="Advanced Export Settings" default-open="false">
+
+Enable PDF exports with custom headers:
+
+````json
+{
+  "export": {
+    "format": "pdf",
+    "header": {
+      "logo": "https://yourdomain.com/logo.png",
+      "color": "#3B82F6"
+    },
+    "options": {
+      "includeToc": true,
+      "pageSize": "A4"
+    }
+  }
+}
+````
+
+</Expandable>
+
+## Integrating Custom CSS or Branding
+
+Inject custom styles via the Advanced settings.
+
+<CodeGroup tabs="CSS,JSON">
+```css
+:root {
+  --primary-color: #3B82F6;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.btn-primary {
+  border-color: var(--primary-color);
+}
+```
+```json
+{
+  "customCSS": ":root { --primary-color: #3B82F6; } .navbar { background-color: var(--primary-color); }"
+}
+```
+</CodeGroup>
+
+Upload your logo and favicon in the `Branding` section. Test changes in preview mode before publishing.
+
+<Callout kind="success">
+  Your customized space now aligns perfectly with your brand. Monitor usage in the Analytics dashboard.
+</Callout>

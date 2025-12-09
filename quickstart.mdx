@@ -1,0 +1,108 @@
+---
+title: Getting Started with Clarkemilyfbznj
+description: A step-by-step guide to set up your first documentation space and create your initial project.
+---
+
+## Overview
+
+Get started with Clarkemilyfbznj in minutes. This guide walks you through account creation, space setup, adding your first document, and basic navigation. Follow these steps to organize your project documentation effectively.
+
+<Callout kind="tip">
+  Prerequisites: You need a valid email address and a modern browser like Chrome or Firefox. No prior setup required.
+</Callout>
+
+## Create Your Account
+
+Sign up quickly to access your documentation dashboard.
+
+<Steps>
+  <Step title="Visit the Sign-Up Page" icon="external-link">
+    Navigate to `https://clarkemilyfbznj.com/signup` and click **Create Account**.
+  </Step>
+  <Step title="Enter Your Details" icon="user">
+    Provide your email, create a strong password, and verify via the confirmation link sent to your inbox.
+  </Step>
+  <Step title="Complete Onboarding" icon="check-circle">
+    Select your role (Developer, Writer, or Admin) and agree to the terms.
+  </Step>
+</Steps>
+
+## Set Up a New Documentation Space
+
+Organize your docs into dedicated spaces for projects or teams.
+
+<Tabs>
+  <Tab title="Web Interface" icon="globe">
+    From the dashboard, click **New Space** > Enter name like "My Project Docs" > Select visibility (Public/Private) > **Create**.
+  </Tab>
+  <Tab title="CLI Tool" icon="terminal">
+    Install the CLI first:
+    ```bash
+    npm install -g @clarkemilyfbznj/cli
+    ```
+    Then run:
+    ```bash
+    clarkemilyfbznj space create "My Project Docs" --private
+    ```
+  </Tab>
+</Tabs>
+
+## Add Your First Document
+
+Create and publish your initial MDX page.
+
+<Steps>
+  <Step title="Create New Document" icon="file-plus">
+    In your space, click **New Document** and name it `quickstart.mdx`.
+  </Step>
+  <Step title="Add Frontmatter and Content" icon="edit-3">
+    Use this structure:
+    
+    <CodeGroup tabs="MDX,YAML">
+    ````mdx
+    ---
+    title: Quickstart Guide
+    description: Your first doc.
+    ---
+    
+    ## Hello World
+    
+    Welcome to Clarkemilyfbznj!
+    ````
+    
+    ```yaml
+    title: Quickstart Guide
+    description: Your first doc.
+    ```
+    </CodeGroup>
+  </Step>
+  <Step title="Preview and Publish" icon="eye">
+    Click **Preview** to check rendering, then **Publish** to make it live.
+  </Step>
+</Steps>
+
+<Callout kind="info">
+  Use `{title}` and `{description}` in frontmatter for SEO. Always escape special characters like `<` and `>` with backticks in prose.
+</Callout>
+
+## Basic Navigation
+
+Explore the interface efficiently.
+
+<Columns cols={3}>
+  <Card title="Dashboard" icon="layout" href="/docs/dashboard">
+    View all spaces and recent activity.
+  </Card>
+  <Card title="Editor" icon="edit-3" href="/docs/editor">
+    Write and preview MDX with live components.
+  </Card>
+  <Card title="Settings" icon="settings" href="/docs/settings">
+    Manage users, themes, and integrations.
+  </Card>
+</Columns>
+
+<Expandable title="Advanced Navigation Tips" default-open="false">
+  Use the search bar (`Ctrl+K`) for quick access. Keyboard shortcuts include `<kbd>Ctrl</kbd>+<kbd>S</kbd>` to save and `<kbd>Ctrl</kbd>+<kbd>P</kbd>` for publish.
+</Expandable>
+
+Next, explore [API integrations](/docs/api) or [custom themes](/docs/themes) to enhance your setup.

@@ -1,0 +1,136 @@
+---
+title: Changelog
+description: Release notes and updates for Clarkemilyfbznj Documentation, highlighting new features and improvements.
+---
+
+## Recent Changes
+
+Clarkemilyfbznj Documentation releases updates regularly to enhance your documentation experience. You review changes here to stay informed about new features, improvements, and fixes. Each release includes detailed notes on what you gain.
+
+<Callout kind="info">
+  Bookmark this page to track updates. You receive notifications via email when new versions launch.
+</Callout>
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added PDF and HTML export options for entire documentation sites
+- Introduced batch export for multiple pages at once
+- New search indexing for faster full-text queries
+
+## Improvements
+
+- Optimized rendering performance by 40% for large MDX files
+- Enhanced mobile responsiveness in the editor preview
+
+## Bug Fixes
+
+- Fixed export failures with embedded images
+- Resolved syntax highlighting issues in dark mode
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Real-time collaboration with multiple editors
+- Inline commenting system for feedback
+- Version history with diff viewer
+
+## Improvements
+
+- Streamlined sidebar navigation for nested docs
+- Better auto-save reliability during edits
+
+## Bug Fixes
+
+- Corrected frontmatter parsing errors with custom fields
+- Fixed drag-and-drop reordering in page tree
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature"]}>
+
+## Initial Release
+
+- Core MDX documentation engine with live preview
+- Full component support including Tabs, Steps, and Callouts
+- Integrated GitHub sync for version control
+- Customizable themes and brand colors like `#3B82F6`
+
+</Update>
+
+## Upgrading Your Installation
+
+You upgrade Clarkemilyfbznj Documentation seamlessly across package managers. Follow these steps to get the latest version and apply any migrations.
+
+<Tabs>
+  <Tab title="npm" icon="package">
+    <Steps>
+      <Step title="Update Package" icon="download">
+        Run the update command in your project root.
+
+        <CodeGroup tabs="Terminal">
+          ```bash
+          npm install clarkemilyfbznj-docs@latest
+          ```
+        </CodeGroup>
+      </Step>
+      <Step title="Run Migrations" icon="settings">
+        Execute the migration script if upgrading from v1.0.
+
+        ```bash
+        npx clarkemilyfbznj-docs migrate
+        ```
+      </Step>
+      <Step title="Restart Server" icon="refresh-cw">
+        Restart your development server.
+
+        ```bash
+        npm run dev
+        ```
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Yarn" icon="package">
+    <Steps>
+      <Step title="Update Package" icon="download">
+        ```bash
+        yarn add clarkemilyfbznj-docs@latest
+        ```
+      </Step>
+      <Step title="Run Migrations" icon="settings">
+        ```bash
+        yarn clarkemilyfbznj-docs migrate
+        ```
+      </Step>
+      <Step title="Restart Server" icon="refresh-cw">
+        ```bash
+        yarn dev
+        ```
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+  Back up your `docs/` folder before upgrading. Review migration notes in the release details above for version-specific changes.
+</Callout>
+
+## Feature Highlights
+
+<Columns cols={3}>
+  <Card title="Export Tools" icon="download" horizontal>
+    Export your docs to PDF or HTML effortlessly. Share static versions anywhere.
+  </Card>
+  <Card title="Collaboration" icon="users">
+    Edit docs in real-time with your team. Add comments without leaving the editor.
+  </Card>
+  <Card title="Performance" icon="zap">
+    Enjoy 40% faster rendering. Handle large sites without lag.
+  </Card>
+</Columns>
+
+You access older changelogs through your Git history or by checking the GitHub releases page. These updates ensure Clarkemilyfbznj Documentation remains your go-to tool for organized, professional documentation.
